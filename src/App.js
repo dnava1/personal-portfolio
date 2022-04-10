@@ -4,17 +4,29 @@ import './App.css';
 function App() {
   return (
     <div class= "bg-blue-200 h-screen" >
+      <header class="flex justify-between text-white py-4 px-8">
+        <a href="/" class="text-lg font-bold">Logo</a>
+      <ul class="hidden md:flex flex-row items-center align-middle gap-5">
+        <li><a href="Home" class="bg-pink-400 text-blue-200 py-2 px-4 rounded-md font-bold">Home</a></li>
+        <li><a href="About" class="bg-pink-400 text-blue-200 py-2 px-4 rounded-md font-bold">About</a></li>
+        <li><a href="Contact" class="bg-pink-400 text-blue-200 py-2 px-4 rounded-md font-bold">Contact</a></li>
+      </ul>
+      <button class ="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+      </button>
+      </header>
+
       <div class="grid place-items-center">
       <h1 className="text-3xl md:text-6xl lg:text-7xl underline font-extrabold text-blue-700 ">
         Personal Portfolio
       </h1>
-
-      
-      
       <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700">
         Daniel Navarro
       </h1>
-      <div classname="grid-cols-3">
+
+      <div>
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-extrabold py-2 px-4 rounded ml-4 mt-4" onClick={(e) => {
         e.preventDefault();
         window.open("https://github.com/dnava1");
@@ -31,6 +43,7 @@ function App() {
       }}>
         Resume</button>
         </div>
+
         </div>
         </div>
   );
