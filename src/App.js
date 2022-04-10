@@ -5,14 +5,14 @@ function App() {
   return (
     <div class= "bg-blue-200 h-screen" >
 
-      <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800 fixed w-full top-0">
+      <nav class="top-0 sticky bg-blue-700 border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800 w-full ">
         <div class="flex justify-between text-white py-1 px-1 mx-auto">
           <a href="/" class="text-lg font-bold">Daniel Navarro</a>
           <ul class="hidden md:flex flex-row items-center align-middle gap-5">
             <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Home</button></li>
             <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></li>
             <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></li>
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Project</button></li>
+            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></li>
             <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Contact</button></li>
             </ul>
             
@@ -24,6 +24,8 @@ function App() {
                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                   <li><a href="Home" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a></li>
                   <li><a href="About" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a></li>
+                  <li><a href="Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Skills</a></li>
+                  <li><a href="Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a></li>
                   <li><a href="Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a></li>
                 </ul>
               </div>           
