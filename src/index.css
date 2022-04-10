@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.customBtn{
+  @apply bg-pink-400;
+ 
+}
+
+.customBtn:hover{
+  @apply bg-blue-200;
+  @apply shadow-md;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

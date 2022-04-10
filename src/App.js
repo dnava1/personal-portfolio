@@ -45,6 +45,48 @@ function App() {
         </div>
 
         </div>
+
+
+
+
+      <div class="container mx-auto p-2">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+            <h2 class="tracking-widest text-xs mb-1">Category</h2>
+              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas dasd asd asd asd asd as</p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+            <h2 class="tracking-widest text-xs mb-1">Category</h2>
+              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+            <h2 class="tracking-widest text-xs mb-1">Category</h2>
+              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+            <h2 class="tracking-widest text-xs mb-1">Category</h2>
+              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      
         </div>
   );
 }
