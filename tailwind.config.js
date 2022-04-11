@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       animation:{
-        beat: "beat 1s ease-in-out infinite",
+        beat: "beat 1s ease-out infinite",
       },
       keyframes:{
         beat:{
           '0%, 100%': {transform: 'scale(1)'},
-          '50%': {transform: 'scale(1.5)'}
+          '25%': {transform: 'scale(1.2)'}
         }
       }
     },
