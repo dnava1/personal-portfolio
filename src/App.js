@@ -8,6 +8,16 @@ import reactIcon from "./Images/reactIcon.png";
 import tailwindIcon from "./Images/tailwindIcon.png"
 import mongoIcon from "./Images/mongoIcon.png"
 import djangoIcon from "./Images/djangoIcon.png"
+import firebaseIcon from "./Images/firebaseIcon.png"
+import liteIcon from "./Images/liteIcon.png"
+import androidIcon from "./Images/androidIcon.png"
+import puttyIcon from "./Images/puttyIcon.png"
+import winscpIcon from "./Images/winscpIcon.png"
+import vsIcon from "./Images/vsIcon.png"
+import githubIcon from "./Images/githubIcon.png"
+import postIcon from "./Images/postIcon.png"
+import npmIcon from "./Images/npmIcon.png"
+
 
 
 
@@ -15,17 +25,17 @@ import './App.css';
 
 function App() {
   return (
-    <div class= "bg-blue-200 h-max font-mono" >
+    <div class= "bg-blue-200 h-max font-sans" >
 
       <nav class="top-0 sticky bg-blue-700 border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800 w-full ">
         <div class="flex justify-between text-white py-1 px-1 mx-auto">
           <a href="/" class="text-lg font-bold">Daniel Navarro</a>
           <ul class="hidden md:flex flex-row items-center align-middle gap-5">
-            <li><a href="#Home"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Home</button></a></li>
-            <li><a href="#About"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
-            <li><a href="#Skills"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
-            <li><a href="#Projects"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
-            <li><a href="#Contact"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Contact</button></a></li>
+           
+            <li><a href="#About"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
+            <li><a href="#Skills"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
+            <li><a href="#Projects"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
+            <li><a href="#Contact"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Contact</button></a></li>
             </ul>
             
             <button id="dropdownDefault" data-dropdown-toggle="dropdown" class ="md:hidden hover:bg-blue-700 ">
@@ -46,14 +56,19 @@ function App() {
 
 
       <div class="grid place-items-center">
-      <h1 id="Home" className="text-3xl md:text-6xl lg:text-7xl underline font-extrabold text-blue-700 font-mono">
+      <h1 id="About" className="text-3xl md:text-6xl lg:text-7xl underline font-extrabold text-blue-700">
         Personal Portfolio
       </h1>
-      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700">
+      <h2 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700">
         Daniel Navarro
-      </h1>
+      </h2>
+      <h3 className = "text-1xl md:text-2xl lg:text-3xl font-extrabold text-pink-400 mx-auto">
+        I am a motivated and enthusiastic software developer completing my BS in Computer Science in Spring 2022. I enjoy building interesting software
+        and solving the problems that come alongside that. 
+      </h3>
 
       <div>
+
       <button type="button" class="py-2 px-4 ml-4 mt-4" 
       onClick={(e) => {
         e.preventDefault();
@@ -73,22 +88,22 @@ function App() {
         
         </div>
 
-        <button class="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-blue-700 rounded-lg group bg-gradient-to-br from-pink-400 to-pink-400 group-hover:from-pink-400 group-hover:to-pink-400  dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400"
+        <button class="hover:animate-bounce button text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
         
         onClick={(e) => {
         e.preventDefault();
         window.open("https://lmgtfy.app/?q=resume");
       }}>
-        <span class="px-2 py-2.5 transition-all ease-in duration-75 bg-blue-200 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+       
           Download Resume
-          </span>
+          
         </button>
 
         </div>
 
         
 
-        <h1 id="About" className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 grid place-items-center">
+        <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 grid place-items-center">
         About
       </h1>
       <p className ="grid place-content-center">
@@ -108,10 +123,10 @@ fsdfsdfs
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400 ">
             
             
-              <h1 class="text-lg text-silver mb-3">Languages</h1>
+              <h1 class="text-lg text-silver mb-3 font-semibold">Languages</h1>
               <p class="loading-relaxed text-sm mb-3 columns-3">
               <img src={javaIcon} height={85} width={85}  />
              
@@ -131,43 +146,64 @@ fsdfsdfs
 
           <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
            
-              <h1 class="text-lg text-silver mb-3">Frameworks</h1>
-              <p class="loading-relaxed text-sm mb-3 colums">React Native
+              <h1 class="text-lg text-silver mb-3 font-semibold">Frameworks</h1>
+              <p class="loading-relaxed text-sm mb-3 columns-3">
               <img src={reactIcon}height={85} width={85} />
               <img src={tailwindIcon}height={85} width={85} />
+              <img src={djangoIcon}height={85} width={85} />
               
               
               </p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+              
           </div>
 
           <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
           
-              <h1 class="text-lg text-silver mb-3">Tools</h1>
-              <p class="loading-relaxed text-sm mb-3">
-              <img src={gitIcon}height={85} width={85} /></p>
+              <h1 class="text-lg text-silver mb-3 font-semibold">Tools</h1>
+              <p class="loading-relaxed text-sm mb-3 columns-3">
+              <img src={gitIcon}height={85} width={85} />
+              <img src={androidIcon}height={85} width={85} />
+              <img src={puttyIcon}height={85} width={85} />
+              <img src={winscpIcon}height={85} width={85} />
+              <img src={postIcon}height={85} width={85} />
+             
+              <img src={vsIcon}height={85} width={85} />
+              <img src={githubIcon}height={85} width={85} />
+              <img src={npmIcon}height={85} width={85} />
+              </p>
               
           </div>
 
           <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
            
-              <h1 class="text-lg text-silver mb-3">Databases</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              <h1 class="text-lg text-silver mb-3 font-semibold">Databases</h1>
+              <p class="loading-relaxed text-sm mb-3 columns-3">
+              <img src={mongoIcon}height={85} width={85} />
+              <img src={firebaseIcon}height={85} width={85} />
+              <img src={liteIcon}height={85} width={85} />
+              
+              </p>
               
           </div>
 
           <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
             
-              <h1 class="text-lg text-silver mb-3">Soft Skills</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+              <h1 class="text-lg text-silver mb-3 font-semibold">Soft Skills</h1>
+              
+              <p class="loading-relaxed text-sm mb-3">•Detail Oriented</p>
+              <p class="loading-relaxed text-sm mb-3">•Verbal and Written Communication</p>
+              <p class="loading-relaxed text-sm mb-3">•Conflict Resolution</p>
+              <p class="loading-relaxed text-sm mb-3">•Collaboration</p>
+             
           </div>
 
           <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
             
-              <h1 class="text-lg text-silver mb-3">Concepts</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+              <h1 class="text-lg text-silver mb-3 font-semibold">Concepts</h1>
+              <p class="loading-relaxed text-sm mb-3">•Agile Methodoloy</p>
+              <p class="loading-relaxed text-sm mb-3">•Object-Oriented Programming</p>
+              <p class="loading-relaxed text-sm mb-3">•RESTful APIs</p>
+              
           </div>
     
 
