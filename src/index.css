@@ -6,6 +6,11 @@
   @apply bg-pink-400;
  
 }
+@layer base{
+  html{
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
 
 .customBtn:hover{
   @apply bg-blue-200;

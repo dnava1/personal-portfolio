@@ -2,23 +2,30 @@ import javaIcon from "./Images/javaIcon.png"; import htmlIcon from "./Images/htm
 import javascriptIcon from "./Images/javascriptIcon.png";
 import pythonIcon from "./Images/pythonIcon.png";
 import cIcon from "./Images/cIcon.png";
+import sqlIcon from "./Images/sqlIcon.png";
+import gitIcon from "./Images/gitIcon.png";
+import reactIcon from "./Images/reactIcon.png";
+import tailwindIcon from "./Images/tailwindIcon.png"
+import mongoIcon from "./Images/mongoIcon.png"
+import djangoIcon from "./Images/djangoIcon.png"
+
 
 
 import './App.css';
 
 function App() {
   return (
-    <div class= "bg-blue-200 h-screen" >
+    <div class= "bg-blue-200 h-max font-mono" >
 
       <nav class="top-0 sticky bg-blue-700 border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800 w-full ">
         <div class="flex justify-between text-white py-1 px-1 mx-auto">
           <a href="/" class="text-lg font-bold">Daniel Navarro</a>
           <ul class="hidden md:flex flex-row items-center align-middle gap-5">
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Home</button></li>
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></li>
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></li>
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></li>
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Contact</button></li>
+            <li><a href="#Home"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Home</button></a></li>
+            <li><a href="#About"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
+            <li><a href="#Skills"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
+            <li><a href="#Projects"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
+            <li><a href="#Contact"><button type="button" class="text-white bg-gradient-to-r from-blue-700 to-pink-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Contact</button></a></li>
             </ul>
             
             <button id="dropdownDefault" data-dropdown-toggle="dropdown" class ="md:hidden hover:bg-blue-700 ">
@@ -27,11 +34,11 @@ function App() {
               
               <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-                  <li><a href="Home" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a></li>
-                  <li><a href="About" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a></li>
-                  <li><a href="Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Skills</a></li>
-                  <li><a href="Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a></li>
-                  <li><a href="Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a></li>
+                  <li><a href="#Home" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a></li>
+                  <li><a href="#About" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a></li>
+                  <li><a href="#Skills" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Skills</a></li>
+                  <li><a href="#Projects" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a></li>
+                  <li><a href="#Contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a></li>
                 </ul>
               </div>           
         </div>  
@@ -39,7 +46,7 @@ function App() {
 
 
       <div class="grid place-items-center">
-      <h1 className="text-3xl md:text-6xl lg:text-7xl underline font-extrabold text-blue-700 ">
+      <h1 id="Home" className="text-3xl md:text-6xl lg:text-7xl underline font-extrabold text-blue-700 font-mono">
         Personal Portfolio
       </h1>
       <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700">
@@ -66,18 +73,33 @@ function App() {
         
         </div>
 
-        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-blue-700 rounded-lg group bg-gradient-to-br from-pink-400 to-pink-400 group-hover:from-pink-400 group-hover:to-pink-400  dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400"
+        <button class="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-blue-700 rounded-lg group bg-gradient-to-br from-pink-400 to-pink-400 group-hover:from-pink-400 group-hover:to-pink-400  dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400"
         
         onClick={(e) => {
         e.preventDefault();
         window.open("https://lmgtfy.app/?q=resume");
       }}>
-        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-blue-200 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+        <span class="px-2 py-2.5 transition-all ease-in duration-75 bg-blue-200 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
           Download Resume
-  </span>
+          </span>
         </button>
 
         </div>
+
+        
+
+        <h1 id="About" className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 grid place-items-center">
+        About
+      </h1>
+      <p className ="grid place-content-center">
+fsdfsdfs
+      </p>
+      
+
+        <h1 id="Skills" className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 grid place-items-center">
+        Skills
+      </h1>
+
 
 
 
@@ -91,96 +113,81 @@ function App() {
             
               <h1 class="text-lg text-silver mb-3">Languages</h1>
               <p class="loading-relaxed text-sm mb-3 columns-3">
-              <img src={javaIcon} height={65} width={65} />
-              <img src={htmlIcon}/>
-              <img src={cssIcon}/>
-              <img src={javascriptIcon}/>
-              <img src={pythonIcon}/>
-              <img src={cIcon}/>
-              
-              
-              
+              <img src={javaIcon} height={85} width={85}  />
+             
+              <img src={htmlIcon} height={85} width={85} />
+              <img src={cssIcon} height={85} width={85} />
+              <img src={javascriptIcon} height={85} width={85} />
+              <img src={pythonIcon} height={85} width={85} />
+              <img src={cIcon}height={85} width={85} />
+              <img src={sqlIcon}height={85} width={85} />
               
               </p>
               
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+              
           </div>
-
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
-            <h2 class="tracking-widest text-xs mb-1">Category</h2>
-              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
-          </div>
-
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
-            <h2 class="tracking-widest text-xs mb-1">Category</h2>
-              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
-          </div>
-
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
-            <h2 class="tracking-widest text-xs mb-1">Category</h2>
-              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
-          </div>
-
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
-            <h2 class="tracking-widest text-xs mb-1">Category</h2>
-              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
-          </div>
-
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
-            <h2 class="tracking-widest text-xs mb-1">Category</h2>
-              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
-          </div>
-
-          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
-            <h2 class="tracking-widest text-xs mb-1">Category</h2>
-              <h1 class="text-lg text-silver mb-3">TAILWIND CSS</h1>
-              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
-              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
-          </div>
-          
-          
 
           
 
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+           
+              <h1 class="text-lg text-silver mb-3">Frameworks</h1>
+              <p class="loading-relaxed text-sm mb-3 colums">React Native
+              <img src={reactIcon}height={85} width={85} />
+              <img src={tailwindIcon}height={85} width={85} />
+              
+              
+              </p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
           
+              <h1 class="text-lg text-silver mb-3">Tools</h1>
+              <p class="loading-relaxed text-sm mb-3">
+              <img src={gitIcon}height={85} width={85} /></p>
+              
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+           
+              <h1 class="text-lg text-silver mb-3">Databases</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+            
+              <h1 class="text-lg text-silver mb-3">Soft Skills</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+
+          <div class="bg-white rounded-md py-4 px-4 border-2 border-pink-400">
+            
+              <h1 class="text-lg text-silver mb-3">Concepts</h1>
+              <p class="loading-relaxed text-sm mb-3">BL bladnsa dsanudasdnuasduas</p>
+              <button class="bg-orange-500 text-sm text-white rounded-md px-4 py-1 customBtn">Click Me</button>
+          </div>
+    
 
         </div>
 
 
       </div>
 
-      
-
-
-      
       <div class="grid place-items-center">
 
-      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 ">
-        About
-      </h1>
-
-      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 ">
-        Skills
-      </h1>
-
-      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 ">
+     
+      
+      <h1 id="Projects" className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-blue-700 ">
         Projects
       </h1>
-      
+     
 
 
 
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-extrabold py-2 px-4 rounded ml-4 mt-4" onClick={() => {
+      <button id="Contact" class="bg-blue-500 hover:bg-blue-700 text-white font-extrabold py-2 px-4 rounded ml-4 mt-4" onClick={() => {
         window.location='mailto:dnava039@fiu.edu'
       }}>
         Send an Email</button>
