@@ -1,3 +1,6 @@
+
+
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}","./node_modules/flowbite/**/*.js"], 
   
@@ -15,7 +18,8 @@ module.exports = {
       colors:{
         'viceblue': '#0BD3D3',
         'vicepink': '#F890E7',
-      }
+      },
+     
     },
   },
   plugins: [
