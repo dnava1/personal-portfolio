@@ -18,7 +18,7 @@ import githubIcon from "./Images/githubIcon.png"
 import postIcon from "./Images/postIcon.png"
 import npmIcon from "./Images/npmIcon.png"
 import profilepicture from "./Images/profilepicture.png"
-import educationIcon from "./Images/educationIcon.png"
+import linkedIcon from "./Images/linkedIcon.png"
 import heart from "./Images/heart.svg"
 
 
@@ -30,6 +30,8 @@ function App() {
   return (
     <div class= "bg-neutral-800 h-max font-sans" >
 
+
+      
       <nav class="top-0 sticky bg-blue-800 border-gray-200 px-2 sm:px-4 py-1  dark:bg-gray-800 w-full ">
         <div class="flex justify-between text-white py-1 px-1 mx-auto">
           <a href="/" class="text-lg font-bold ">Daniel Navarro</a>
@@ -63,11 +65,41 @@ function App() {
       </nav>
 
 
+      
+      <div class="fixed grid columns-1 bottom-5 left-2">
+     
+      <a class="cursor-pointer"onClick={(e) => {
+       e.preventDefault();
+       window.open("https://www.linkedin.com/in/danielnav/");
+            }}> <img src={linkedIcon} height={20} width={20} class="pb-1"/>  </a>
+
+      
+<a class="cursor-pointer"onClick={(e) => {
+       e.preventDefault();
+       window.open("https://github.com/dnava1");
+            }}> <img src={githubIcon} height={20} width={20}/>  </a>
+      
+      
+
+
+       
+    
+      </div>
+
+
+      
+
+
+
+
+
+
+
       <div id="About" class="grid place-items-center ">
-      <h1  className="text-4xl md:text-6xl lg:text-8xl underline font-bold text-sky-300 pt-10">
+      <h1  className="text-5xl md:text-7xl lg:text-8xl underline font-bold text-sky-300 pt-10">
         Daniel Navarro
       </h1>
-      <h2 className = "text-2xl md:text-4xl lg:text-6xl font-semibold text-sky-300">
+      <h2 className = "text-3xl md:text-5xl lg:text-6xl font-semibold text-sky-300">
         Software Engineer
       </h2>
       <h3 className = "text-1xl md:text-2xl lg:text-3xl font-semibold text-sky-300">
@@ -102,6 +134,8 @@ function App() {
         
         </div>
 
+        
+
        
 
         
@@ -127,6 +161,10 @@ function App() {
         
 
         
+
+        
+
+        
       <p className ="grid place-content-center">
 fsdfsdfs
       </p>
@@ -135,15 +173,20 @@ fsdfsdfs
         Experience and Education
         
 
+
       </h1>
 
-       <h2 class ="grid place-content-center text-white">
-      <img src={educationIcon} />
-      🎓B.S. - Computer Science
+      
+
+       <h2 class ="grid place-content-center text-white pt-10 text-1xl md:text-2xl lg:text-3xl ">
+      
+      <p class="font-bold">
+      Bachelor of Science in Computer Science
+      </p>
 
       
-      <p class ="grid place-content-center text-white ml-5">
-      •Florida International University - Miami, FL
+      <p class ="grid place-content-center text-white ml-5 text-1xl md:text-2xl lg:text-3xl ">
+      🎓Florida International University - Miami, FL
         <p>•Aug 2019 - May 2022</p>
         •GPA - 3.81
         <p > •Upsilon Pi Epsilon (UPE) </p>
@@ -377,11 +420,11 @@ fsdfsdfs
          
     
 
-        </div>
+        </div >
         
 
       </div>
-      <h1>SOMETHING GOES HERE</h1>
+      <div class="pb-5"></div>
 
       <footer class="p-4 bg-zinc-600  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex flex-wrap items-center">
@@ -391,7 +434,7 @@ fsdfsdfs
 
 
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+    <ul class="flex flex-wrap items-center mt-3 text-sm ml-9 text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
             <a href="#" class="mr-4 hover:underline md:mr-6 text-white ">Resume</a>
         </li>
