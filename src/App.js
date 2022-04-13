@@ -20,6 +20,9 @@ import npmIcon from "./Images/npmIcon.png"
 import profilepicture from "./Images/profilepicture.png"
 import linkedIcon from "./Images/linkedIcon.png"
 import heart from "./Images/heart.svg"
+import dijkstra from "./Images/dijkstra.png"
+import planttracker from "./Images/planttracker.png"
+
 
 
 
@@ -32,31 +35,31 @@ function App() {
 
 
       
-      <nav class="top-0 sticky bg-blue-800 border-gray-200 px-2 sm:px-4 py-1  dark:bg-gray-800 w-full ">
+      <nav class="top-0 sticky bg-sky-600 border-gray-200 px-2 sm:px-4 py-1  dark:bg-gray-800 w-full ">
         <div class="flex justify-between text-white py-1 px-1 mx-auto">
           <a href="/" class="text-lg font-bold ">Daniel Navarro</a>
           <ul class="hidden md:flex flex-row items-center align-middle gap-5">
            
-            <li><a href="#About"><button type="button" class="text-white bg-gradient-to-r from-blue-800 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
-            <li><a href="#Skills"><button type="button" class="text-white bg-gradient-to-r from-blue-800 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
-            <li><a href="#Projects"><button type="button" class="text-white bg-gradient-to-r from-blue-800 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
+            <li><a href="#About"><button type="button" class="text-white bg-gradient-to-r from-sky-600 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
+            <li><a href="#Skills"><button type="button" class="text-white bg-gradient-to-r from-sky-600 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
+            <li><a href="#Projects"><button type="button" class="text-white bg-gradient-to-r from-sky-600 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
             
-            <li><button type="button" class="text-white bg-gradient-to-r from-blue-800 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full "  onClick={() => {
+            <li><button type="button" class="text-white bg-gradient-to-r from-sky-600 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full "  onClick={() => {
         window.location='mailto:dnava039@fiu.edu'
       }}>Contact</button></li>
       </ul>
             
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class ="md:hidden hover:bg-blue-700 ">
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class ="md:hidden hover:bg-sky-700 ">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
               </button>
               
-              <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+              <div id="dropdown" class="hidden z-10 w-44 bg-neutral-800 rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                <ul class="py-1 text-sm text-white dark:text-gray-200" aria-labelledby="dropdownDefault">
                   
-                  <li><a href="#About" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a></li>
-                  <li><a href="#Skills" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Skills</a></li>
-                  <li><a href="#Projects" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a></li>
-                  <li><a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={() => {
+                  <li><a href="#About" class="block py-2 px-4 hover:bg-pink-500 dark:hover:bg-gray-600 dark:hover:text-white">About</a></li>
+                  <li><a href="#Skills" class="block py-2 px-4 hover:bg-pink-500 dark:hover:bg-gray-600 dark:hover:text-white">Skills</a></li>
+                  <li><a href="#Projects" class="block py-2 px-4 hover:bg-pink-500 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a></li>
+                  <li><a class="cursor-pointer block py-2 px-4 hover:bg-pink-500 dark:hover:bg-pink-500 dark:hover:text-white" onClick={() => {
         window.location='mailto:dnava039@fiu.edu'
       }}>Contact</a></li>
                 </ul>
@@ -71,13 +74,13 @@ function App() {
       <a class="cursor-pointer"onClick={(e) => {
        e.preventDefault();
        window.open("https://www.linkedin.com/in/danielnav/");
-            }}> <img src={linkedIcon} height={20} width={20} class="pb-1"/>  </a>
+            }}> <img class="md:w-8 lg:w-14 pb-1"src={linkedIcon} height={22} width={22}/>  </a>
 
       
 <a class="cursor-pointer"onClick={(e) => {
        e.preventDefault();
        window.open("https://github.com/dnava1");
-            }}> <img src={githubIcon} height={20} width={20}/>  </a>
+            }}> <img class="md:w-8 lg:w-14 lg:mb-16 "src={githubIcon} height={22} width={22}/>  </a>
       
       
 
@@ -111,28 +114,7 @@ function App() {
 
     
 
-      <div class="py-2">
-
-      <button type="button" class="hover:animate-pulse px-4 mt-1 mb-2" 
-      onClick={(e) => {
-        e.preventDefault();
-        window.open("https://github.com/dnava1");
-      }}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        
-        </button>
-
-        <button class="hover:animate-pulse  px-4 mt-1" 
-        onClick={(e) => {
-        e.preventDefault();
-        window.open("https://www.linkedin.com/in/danielnav/");
-      }}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-        
-        
-        </button>
-        
-        </div>
+      
 
         
 
@@ -165,20 +147,15 @@ function App() {
         
 
         
-      <p className ="grid place-content-center">
-fsdfsdfs
-      </p>
+      
 
-      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-bold text-sky-300 grid place-items-center">
+      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-bold text-sky-300 grid place-items-center mt-5">
         Experience and Education
-        
-
-
       </h1>
 
       
 
-       <h2 class ="grid place-content-center text-white pt-10 text-1xl md:text-2xl lg:text-3xl ">
+       <h2 class ="grid place-content-center text-white pt-5 lg:pt-10 text-1xl md:text-2xl lg:text-3xl">
       
       <p class="font-bold">
       Bachelor of Science in Computer Science
@@ -305,17 +282,13 @@ fsdfsdfs
 
      
       
-      <h1 id="Projects" className = "text-2xl md:text-4xl lg:text-6xl font-extrabold text-sky-300 ">
+      <h1 id="Projects" className = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-sky-300 mt-24 mb-10">
         Projects
       </h1>
      
 
 
 
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-extrabold py-2 px-4 rounded ml-4 mt-4" onClick={() => {
-        window.location='mailto:dnava039@fiu.edu'
-      }}>
-        Send an Email</button>
         </div>
 
 
@@ -325,30 +298,35 @@ fsdfsdfs
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
 
-          <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-pink-700 ">
-            
-            
-              <h1 class="text-lg text-white mb-3 font-semibold ">Dijkstra Algorithm Visualizer</h1>
-              <p class="loading-relaxed text-sm mb-3 columns-3">
-              <img src={javaIcon} height={85} width={85}  />
-             
-              <img src={htmlIcon} height={85} width={85} />
-            
+        <div class="bg-neutral-900 rounded-md py-3 px-3 border-2 border-pink-700 grid place-content-center">
+            <div>
+            <img src={dijkstra}height={425} width={425} />
+
+            </div>
+          
+              <h1 class="text-lg text-white mb-3 font-semibold text-center">Dijkstra Algorithm Visualizer</h1>
+              <p class="text-center text-white">
+               Developed a visualization tool that finds the shortest path between nodes in a graph using Dijkstra's Algorithm. Input is given by a text file containing
+               a weighted adjacency matrix. Built using Java.
+              
+              
               
               </p>
               
-              
           </div>
 
+
+          <div class="bg-neutral-900 rounded-md py-3 px-3 border-2 border-pink-700 grid place-content-center">
+            <div>
+            <img src={planttracker}height={425} width={425} />
+
+            </div>
           
-
-         
-
-          <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-pink-700">
-              <h1 class="text-lg text-white mb-3 font-semibold">Plant Tracker Website</h1>
-              <p class="loading-relaxed text-sm mb-3 columns-3">
-              <img src={gitIcon}height={85} width={85} />
-              <img src={androidIcon}height={85} width={85} />
+              <h1 class="text-lg text-white mb-3 font-semibold text-center">Plant Tracker</h1>
+              <p class="text-center text-white">
+                Built a website that enables users to track the health of their plants. Designed with React.js and Firebase Firestore, along with Google Authentication. 
+              
+              
               
               </p>
               
@@ -427,14 +405,14 @@ fsdfsdfs
       <div class="pb-5"></div>
 
       <footer class="p-4 bg-zinc-600  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex flex-wrap items-center">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex flex-wrap items-center ml-5">
     <img src={heart} height={25} width={25} class="animate-beat"/>
       <p class="pl-3 text-white">Made with React.js and Tailwindcss. </p>
         
 
 
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm ml-9 text-gray-500 dark:text-gray-400 sm:mt-0">
+    <ul class="flex flex-wrap items-center mt-3 text-sm ml-14 text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
             <a href="#" class="mr-4 hover:underline md:mr-6 text-white ">Resume</a>
         </li>
