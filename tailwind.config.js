@@ -12,6 +12,10 @@ module.exports = {
           '25%': {transform: 'scale(1.2)'}
         }
       },
+      colors:{
+        'viceblue': '#0BD3D3',
+        'vicepink': '#F890E7',
+      }
     },
   },
   plugins: [
