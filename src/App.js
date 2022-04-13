@@ -90,14 +90,14 @@ function App() {
       <div class= "bg-gradient-to-r from-neutral-800 to-viceblue  h-max font-sans " >
 
 
-      <div id="About" class="grid place-items-center ">
-      <h1  className="text-5xl md:text-7xl lg:text-8xl underline font-bold text-viceblue pt-10">
+      <div id="About" class="grid place-items-center">
+      <h1  className="text-5xl md:text-7xl lg:text-8xl underline font-bold text-viceblue pt-10 pb-2 animate-bounceintro">
         Daniel Navarro
       </h1>
-      <h2 className = "text-3xl md:text-5xl lg:text-6xl font-semibold text-viceblue">
+      <h2 className = "text-3xl md:text-5xl lg:text-6xl font-semibold text-viceblue pb-1 animate-bounceintro">
         Software Engineer
       </h2>
-      <h3 className = "text-1xl md:text-2xl lg:text-3xl font-semibold text-white">
+      <h3 className = "text-1xl md:text-2xl lg:text-3xl font-semibold text-white animate-bounceintro">
         Miami, Fl • 786-609-7234 • dnava039@fiu.edu
       </h3>
       
@@ -109,7 +109,7 @@ function App() {
         and solving the problems that come along. My hobbies include hiking, gardening, and cooking.
       </h1>
 
-      <button class="rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 button text-white bg-gradient-to-r from-vicepink via-pink-500 to-vicepink hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-vicepink shadow-lg font-mediumtext-sm px-3 py-2.5 mb-10 text-center "
+      <button class="rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 button text-white bg-gradient-to-r from-vicepink via-pink-500 to-vicepink hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-vicepink shadow-lg font-mediumtext-sm px-3 py-2.5 mb-20 text-center "
         
         onClick={(e) => {
         e.preventDefault();
@@ -124,7 +124,7 @@ function App() {
         </div>
 
         
-      <h1 className = "text-2xl md:text-4xl lg:text-6xl font-bold text-viceblue grid place-items-center mt-5">
+      <h1 className = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue grid place-items-center mt-24 mb-10 center-text">
         Experience and Education
       </h1>
 
@@ -145,11 +145,26 @@ function App() {
 
       </p>
       </h2>
-      <p class="grid place-content-center text-white mt-3">hello</p>
+      <p  id="Skills"  class="grid place-content-center text-white mt-3">Experience</p>
+      <h2 class ="grid place-content-center text-white pt-5 lg:pt-10 text-1xl md:text-2xl lg:text-3xl">
+      
+      <p class="font-bold">
+      Bachelor of Science in Computer Science
+      </p>
+
+      
+      <p class ="grid place-content-center text-white ml-5 text-1xl md:text-2xl lg:text-3xl ">
+      🎓Florida International University - Miami, FL
+        <p>•Aug 2019 - May 2022</p>
+        •GPA - 3.81
+        <p > •Upsilon Pi Epsilon (UPE) </p>
+
+      </p>
+      </h2>
      
       
 
-        <h1 id="Skills" className = "text-2xl md:text-4xl lg:text-6xl font-bold text-viceblue grid place-items-center">
+        <h1 class = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue grid place-items-center mt-24 mb-10">
         Skills
       </h1>
 
@@ -250,11 +265,11 @@ function App() {
 
       </div>
 
-      <div class="grid place-items-center">
+      <div id="Projects" class="grid place-items-center ">
 
      
       
-      <h1 id="Projects" className = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue mt-24 mb-10">
+      <h1  className = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue mt-24 mb-10">
         Projects
       </h1>
      
@@ -368,7 +383,7 @@ function App() {
 
       <footer class="p-4 bg-zinc-600  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex flex-wrap items-center ml-5">
-    <img src={heart} height={25} width={25} class="animate-beat"/>
+    <img src={heart} height={30} width={30} class="animate-beat"/>
       <p class="pl-3 text-white">Made with React.js and Tailwindcss. </p>
         
 

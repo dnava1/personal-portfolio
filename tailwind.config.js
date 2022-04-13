@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       animation:{
         beat: "beat 1s ease-out infinite",
+        bounceintro: "beat 4.5s"
       },
       keyframes:{
         beat:{
