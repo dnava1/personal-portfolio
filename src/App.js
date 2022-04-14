@@ -33,7 +33,7 @@ import './App.css';
 
 function App() {
   return (
-    <div class= "bg-neutral-800  h-max font-sans " >
+    <div class= "bg-neutral-800  h-max font-sans scroll-smooth" >
 
 
       
@@ -51,7 +51,7 @@ function App() {
       }}>Contact</button></li>
       </ul>
             
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class ="md:hidden hover:bg-cyan-500 ">
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class ="md:hidden hover:bg-vicepink ">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
               </button>
               
@@ -76,22 +76,22 @@ function App() {
       <a class="cursor-pointer"onClick={(e) => {
        e.preventDefault();
        window.open("https://www.linkedin.com/in/danielnav/");
-            }}> <img class="md:w-8 lg:w-14 pb-1"src={linkedIcon} height={22} width={22}/>  </a>
+            }}> <img class="md:w-8 lg:w-14 pb-1"src={linkedIcon} height={25} width={25}/>  </a>
 
       
 <a class="cursor-pointer"onClick={(e) => {
        e.preventDefault();
        window.open("https://github.com/dnava1");
-            }}> <img class="md:w-8 lg:w-14 lg:mb-16 "src={githubIcon} height={22} width={22}/>  </a>
+            }}> <img class="md:w-8 lg:w-14 lg:mb-16 "src={githubIcon} height={25} width={25}/>  </a>
     
       </div>
 
 
-      <div class= "bg-gradient-to-r from-neutral-800 to-viceblue  h-max font-sans " >
+      <div class= "bg-gradient-to-r from-neutral-800 to-viceblue  h-max font-sans scroll-smooth" >
 
 
       <div id="About" class="grid place-items-center">
-      <h1  className="text-5xl md:text-7xl lg:text-8xl underline font-bold text-viceblue pt-10 pb-2 animate-bounceintro">
+      <h1  className="text-5xl md:text-7xl lg:text-8xl underline font-bold text-vicepink pt-10 pb-2 animate-bounceintro">
         Daniel Navarro
       </h1>
       <h2 className = "text-3xl md:text-5xl lg:text-6xl font-semibold text-viceblue pb-1 animate-bounceintro">
@@ -101,7 +101,7 @@ function App() {
         Miami, Fl • 786-609-7234 • dnava039@fiu.edu
       </h3>
       
-      <img src={profilepicture} height={300} width={300} class="pt-10"/>
+      <img src={profilepicture} height={310} width={310} class="pt-10"/>
       
 
         <h1 className = "text-center text-1xl md:text-2xl lg:text-3xl font-extrabold text-vicepink mx-auto py-2 max-w-screen-lg mt-10 px-10">
@@ -124,38 +124,42 @@ function App() {
         </div>
 
         
-      <h1 className = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue grid place-items-center mt-24 mb-10 center-text">
-        Experience and Education
+      <h1 className = "text-5xl md:text-6xl lg:text-8xl font-extrabold text-viceblue grid place-items-center mt-24 mb-5 ">
+        Education
       </h1>
 
       
 
-       <h2 class ="grid place-content-center text-white pt-5 lg:pt-10 text-1xl md:text-2xl lg:text-3xl">
+       <h2 class ="text-white pt-5 lg:pt-10 text-2xl md:text-3xl lg:text-4xl grid place-items-center">
       
-      <p class="font-bold">
-      Bachelor of Science in Computer Science
+      <p class="font-bold text-center">
+      🎓B.S. in Computer Science
       </p>
 
       
-      <p class ="grid place-content-center text-white ml-5 text-1xl md:text-2xl lg:text-3xl ">
-      🎓Florida International University - Miami, FL
+      <p class ="text-white  text-2xl md:text-3xl lg:text-4xl ml-5">
+      •Florida International University
         <p>•Aug 2019 - May 2022</p>
         •GPA - 3.81
         <p > •Upsilon Pi Epsilon (UPE) </p>
 
       </p>
       </h2>
-      <p  id="Skills"  class="grid place-content-center text-white mt-3">Experience</p>
-      <h2 class ="grid place-content-center text-white pt-5 lg:pt-10 text-1xl md:text-2xl lg:text-3xl">
+
+      <h1 className = "text-5xl md:text-6xl lg:text-8xl font-extrabold text-viceblue grid place-items-center mt-24 mb-5 center-text">
+        Experience
+      </h1>
+
+       <h2 class ="text-white pt-5 lg:pt-10 text-2xl md:text-3xl lg:text-4xl grid place-items-center">
       
-      <p class="font-bold">
-      Bachelor of Science in Computer Science
+      <p class="font-bold text-center">
+      📝Enumerator
       </p>
 
       
-      <p class ="grid place-content-center text-white ml-5 text-1xl md:text-2xl lg:text-3xl ">
-      🎓Florida International University - Miami, FL
-        <p>•Aug 2019 - May 2022</p>
+      <p class ="text-white  text-2xl md:text-3xl lg:text-4xl ml-5">
+      •U.S. Census Bureau - Miami, Fl
+        <p>•Jun 2020- Sep 2020</p>
         •GPA - 3.81
         <p > •Upsilon Pi Epsilon (UPE) </p>
 
