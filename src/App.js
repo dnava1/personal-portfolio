@@ -12,18 +12,18 @@ import firebaseIcon from "./Images/firebaseIcon.png"
 import liteIcon from "./Images/liteIcon.png"
 import androidIcon from "./Images/androidIcon.png"
 import puttyIcon from "./Images/puttyIcon.png"
-import winscpIcon from "./Images/winscpIcon.png"
+import winscpIcon from "./Images/winscpIcon.webp"
 import vsIcon from "./Images/vsIcon.png"
 import githubIcon from "./Images/githubIcon.png"
 import postIcon from "./Images/postIcon.png"
 import npmIcon from "./Images/npmIcon.png"
-import profilepicture from "./Images/profilepicture.png"
+import profilepicture from "./Images/profilepicture.webp"
 import linkedIcon from "./Images/linkedIcon.png"
 import heart from "./Images/heart.svg"
-import dijkstra from "./Images/dijkstra.png"
-import planttracker from "./Images/planttracker.png"
-import androidapp from "./Images/androidapp.png"
-import djangopro from "./Images/djangopro.png"
+import dijkstra from "./Images/dijkstra.webp"
+import planttracker from "./Images/planttracker.webp"
+import androidapp from "./Images/androidapp.webp"
+import djangopro from "./Images/djangopro.webp"
 
 
 
@@ -101,7 +101,7 @@ function App() {
         Miami, Fl • 786-609-7234 • dnava039@fiu.edu
       </h3>
       
-      <img src={profilepicture} height={310} width={310} class="pt-10"/>
+      <img src={profilepicture} height={340} width={340} class="pt-10 rounded-full"/>
       
 
         <h1 className = "text-center text-1xl md:text-2xl lg:text-3xl font-extrabold text-vicepink mx-auto py-2 max-w-screen-lg mt-10 px-10">
@@ -161,14 +161,14 @@ function App() {
       •U.S. Census Bureau - Miami, Fl
         <p>•Jun 2020- Sep 2020</p>
         •GPA - 3.81
-        <p > •Upsilon Pi Epsilon (UPE) </p>
+        <p id ="Skills"> •Upsilon Pi Epsilon (UPE) </p>
 
       </p>
       </h2>
      
       
 
-        <h1 class = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue grid place-items-center mt-24 mb-10">
+        <h1  class = "text-4xl md:text-5xl lg:text-7xl font-extrabold text-viceblue grid place-items-center mt-24 mb-10">
         Skills
       </h1>
 
