@@ -34,13 +34,13 @@ function App() {
     <div class= "bg-neutral-800  h-max font-sans scroll-smooth" >
       <nav class="top-0 sticky bg-viceblue border-gray-200 px-2 sm:px-4 py-1.5  dark:bg-gray-800 w-full ">
         <div class="flex justify-between text-white py-1 px-1 mx-auto">
-          <a href="/" class="text-xl font-bold ">Daniel Navarro</a>
+          <a href="/" class="text-xl md:text-2xl lg:text-3xl font-bold md:mt-1 lg:mt-1">Daniel Navarro</a>
           <ul class="hidden md:flex flex-row items-center align-middle gap-5">
-            <li><a href="#About"><button type="button" class="text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
-            <li><a href="#Education"><button type="button" class="text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Education</button></a></li>
-            <li><a href="#Skills"><button type="button" class="text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
-            <li><a href="#Projects"><button type="button" class="text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
-            <li><button type="button" class="text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full "  onClick={() => {
+            <li><a href="#About"><button type="button" class="lg:text-xl text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">About</button></a></li>
+            <li><a href="#Education"><button type="button" class="lg:text-xl text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Education</button></a></li>
+            <li><a href="#Skills"><button type="button" class="lg:text-xl text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Skills</button></a></li>
+            <li><a href="#Projects"><button type="button" class="lg:text-xl text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full ">Projects</button></a></li>
+            <li><button type="button" class="lg:text-xl text-white bg-gradient-to-r from-viceblue to-vicepink hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-pink-400 dark:focus:ring-pink-400 font-semibold text-sm px-5 py-2.5 text-center mr-2 mb-1 mt-.5 rounded-full "  onClick={() => {
               window.location='mailto:dnava039@fiu.edu'
               }}>Contact</button></li>
           </ul>
@@ -77,13 +77,13 @@ function App() {
       
       <div class= "bg-gradient-to-r from-neutral-800 to-viceblue  h-max font-sans scroll-smooth" >
         <div id="About" class="grid place-items-center">
-          <h1  className="text-5xl md:text-7xl lg:text-9xl underline font-bold text-vicepink pt-10 pb-2 animate-bounceintro">
+          <h1  className="text-5xl md:text-7xl lg:text-9xl font-bold text-vicepink pt-10 pb-2 animate-bounceintro">
             Daniel Navarro
           </h1>
-            <h2 className = "text-3xl md:text-5xl lg:text-7xl font-semibold text-viceblue pb-1 animate-bounceintro">
+            <h2 className = "text-3xl md:text-5xl lg:text-7xl font-semibold bg-clip-text text-transparent  bg-gradient-to-br from-vicepink to-viceblue  pb-1 md:pb-2 lg:pb-3 animate-bounceintro">
               Software Engineer
             </h2>
-              <h3 className = "text-1xl md:text-2xl lg:text-4xl font-semibold text-white animate-bounceintro">
+              <h3 className = "text-1xl md:text-2xl lg:text-4xl lg:mt-2 font-semibold text-white animate-bounceintro">
                 Miami, Fl • 786-609-7234 • dnava039@fiu.edu
               </h3>
                 <img src={profilepicture} height={340} width={340} class="pt-10 rounded-full"/>
@@ -92,7 +92,7 @@ function App() {
                   I am a motivated and enthusiastic software developer completing my BS in Computer Science in Spring 2022. I enjoy building interesting software
                   and solving the problems that come along. My hobbies include hiking, gardening, and cooking.
                 </h1>
-                  <button class="rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 button text-white bg-gradient-to-r from-vicepink via-pink-500 to-vicepink hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-vicepink shadow-lg font-mediumtext-sm px-3 py-2.5 mb-20 text-center "
+                  <button class="mt-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 button text-white bg-gradient-to-r from-vicepink via-pink-400 to-vicepink hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-vicepink shadow-lg font-mediumtext-sm px-3 py-2.5 mb-20 text-center "
                     onClick={(e) => {
                     e.preventDefault();
                     window.open("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*");
@@ -145,7 +145,7 @@ function App() {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-vicepink ">
             <h1 class="text-lg text-white mb-3 font-semibold ">Languages</h1>
-              <p class="loading-relaxed text-sm mb-3 columns-3">
+              <p class="loading-relaxed text-sm mb-3 grid grid-cols-3">
                 <img src={javaIcon} height={85} width={85}  />
                 <img src={htmlIcon} height={85} width={85} />
                 <img src={cssIcon} height={85} width={85} />
@@ -159,7 +159,7 @@ function App() {
           
           <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-vicepink">
               <h1 class="text-lg text-white mb-3 font-semibold">Tools</h1>
-                <p class="loading-relaxed text-sm mb-3 columns-3">
+                <p class="loading-relaxed text-sm mb-3 grid grid-cols-3">
                   <img src={gitIcon}height={85} width={85} />
                   <img src={androidIcon}height={85} width={85} />
                   <img src={puttyIcon}height={85} width={85} />
@@ -173,7 +173,7 @@ function App() {
             
           <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-vicepink"> 
             <h1 class="text-lg text-white mb-3 font-semibold">Frameworks</h1>
-              <p class="loading-relaxed text-sm mb-3 columns-3">
+              <p class="loading-relaxed text-sm mb-3 grid grid-cols-3">
                 <img src={reactIcon}height={85} width={85} />
                 <img src={tailwindIcon}height={85} width={85} />
                 <img src={djangoIcon}height={85} width={85} />
@@ -182,7 +182,7 @@ function App() {
           
           <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-vicepink">
             <h1 class="text-lg text-white mb-3 font-semibold">Databases</h1>
-              <p class="loading-relaxed text-sm mb-3 columns-3">
+              <p class="loading-relaxed text-sm mb-3 grid grid-cols-3">
                 <img src={mongoIcon}height={85} width={85} />
                 <img src={firebaseIcon}height={85} width={85} />
                 <img src={liteIcon}height={85} width={85} />
