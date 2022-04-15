@@ -19,7 +19,7 @@ import vsIcon from "./Images/vsIcon.png";
 import githubIcon from "./Images/githubIcon.png";
 import postIcon from "./Images/postIcon.png";
 import npmIcon from "./Images/npmIcon.png";
-import profilepicture from "./Images/profilepicture.webp";
+//import profilepicture from "../public/profilepicture.webp";
 import linkedIcon from "./Images/linkedIcon.png";
 import heart from "./Images/heart.svg";
 import dijkstra from "./Images/dijkstra.webp";
@@ -86,7 +86,7 @@ function App() {
               <h3 className = "text-1xl md:text-2xl lg:text-4xl lg:mt-2 font-semibold text-white animate-bounceintro">
                 Miami, Fl • 786-609-7234 • dnava039@fiu.edu
               </h3>
-                <img src={profilepicture} height={340} width={340} class="pt-10 rounded-full"/>
+                <img src="/profilepicture.webp" height={340} width={340} class="pt-10 rounded-full"/>
                 
                 <h1 className = "text-center text-1xl md:text-2xl lg:text-3xl font-extrabold text-vicepink mx-auto py-2 max-w-screen-lg mt-10 px-10">
                   I am a motivated and enthusiastic software developer completing my BS in Computer Science in Spring 2022. I enjoy building interesting software
@@ -314,7 +314,6 @@ function App() {
         </li>
       </ul>
       </footer>
-
     </div>
   );
 }
