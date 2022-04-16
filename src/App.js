@@ -19,13 +19,14 @@ import vsIcon from "./Images/vsIcon.png";
 import githubIcon from "./Images/githubIcon.png";
 import postIcon from "./Images/postIcon.png";
 import npmIcon from "./Images/npmIcon.png";
-//import profilepicture from "../public/profilepicture.webp";
 import linkedIcon from "./Images/linkedIcon.png";
 import heart from "./Images/heart.svg";
 import dijkstra from "./Images/dijkstra.webp";
 import planttracker from "./Images/planttracker.webp";
 import androidapp from "./Images/androidapp.webp";
 import djangopro from "./Images/djangopro.webp";
+import jupyterIcon from "./Images/jupyterIcon.png";
+import facemask from "./Images/facemask.webp";
 
 import './App.css';
 
@@ -168,6 +169,7 @@ function App() {
                   <img src={winscpIcon}height={85} width={85} />
                   <img src={githubIcon}height={85} width={85} />
                   <img src={npmIcon}height={85} width={85} />
+                  <img src={jupyterIcon}height={85} width={85} />
                 </p>
             </div>
             
@@ -230,6 +232,22 @@ function App() {
                     Developed a visualization tool that finds the shortest path between nodes in a graph using Dijkstra's Algorithm. Input is given by a text file containing a weighted adjacency matrix. Built using Java.
                   </p>
               </a>     
+          </div>
+
+          <div class="hover:opacity-70 bg-neutral-900 rounded-md py-3 px-3 border-2 border-vicepink grid place-content-center cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ">
+            <a onClick={(e) => {
+              e.preventDefault();
+              window.open("https://github.com/Mkamboykos/Anxiety-Stress-Self-Management");
+              }}>
+                <div class="grid place-content-center mt-5">
+                  <img src={facemask}class="rounded-full"height={425} width={425} />
+                  </div>
+                  <h1 class="text-lg text-white mb-3 font-semibold text-center mt-5">Face Mask Detection</h1>
+                  <p class="text-center text-white">
+                    Leveraged the "YOLO" object detection algorithm in order to develop and train a custom model to detect fask masks from images and live feeds. Worked in Jupyter Notebook
+                    and used different Python libraries like PyTorch, Matplotlib, NumPy, OpenCV, LabelImg, YOLOv5, and PyTorch. 
+                  </p>
+            </a>
           </div>
           
           <div class="hover:opacity-70 bg-neutral-900 rounded-md py-3 px-3 border-2 border-vicepink grid place-content-center cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ">
