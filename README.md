@@ -1,9 +1,8 @@
-# Personal Portfolio - Still in Development
+# Personal Portfolio 
 
-This project was created with React and Tailwindcss.
+This website was created with React.js and Tailwindcss.
 
-## Website will be available below
+## Website available below
 
-************************
 
-https://dnavarro.dev 
+# https://dnavarro.dev 
