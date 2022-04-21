@@ -8,7 +8,7 @@ import sqlIcon from "./Images/sqlIcon.png";
 import gitIcon from "./Images/gitIcon.png";
 import reactIcon from "./Images/reactIcon.png";
 import tailwindIcon from "./Images/tailwindIcon.png";
-import mongoIcon from "./Images/mongoIcon.png";
+import msqlIcon from "./Images/msqlIcon.png";
 import djangoIcon from "./Images/djangoIcon.png";
 import firebaseIcon from "./Images/firebaseIcon.png";
 import liteIcon from "./Images/liteIcon.png";
@@ -186,7 +186,7 @@ function App() {
           <div class="bg-neutral-900 rounded-md py-4 px-4 border-2 border-vicepink">
             <h1 class="text-lg text-white mb-3 font-semibold">Databases</h1>
               <p class="loading-relaxed text-sm mb-3 grid grid-cols-3">
-                <img src={mongoIcon}height={85} width={85} />
+                <img src={msqlIcon}height={85} width={85} />
                 <img src={firebaseIcon}height={85} width={85} />
                 <img src={liteIcon}height={85} width={85} />
               </p>
