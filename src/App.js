@@ -246,7 +246,7 @@ function App() {
                   <h1 class="text-lg text-white mb-3 font-semibold text-center mt-5">Face Mask Detection</h1>
                   <p class="text-center text-white">
                     Leveraged the "YOLO" object detection algorithm in order to develop and train a custom model to detect fask masks from images and live feeds. Worked in Jupyter Notebook
-                    and used different Python libraries like PyTorch, Matplotlib, NumPy, OpenCV, LabelImg, YOLOv5, and PyTorch. 
+                    and used different Python libraries like PyTorch, Matplotlib, NumPy, OpenCV, LabelImg, and YOLOv5.
                   </p>
             </a>
           </div>
