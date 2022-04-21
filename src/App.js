@@ -27,6 +27,7 @@ import androidapp from "./Images/androidapp.webp";
 import djangopro from "./Images/djangopro.webp";
 import jupyterIcon from "./Images/jupyterIcon.png";
 import facemask from "./Images/facemask.webp";
+import combinatorial from "./Images/combinatorial.webp";
 
 import './App.css';
 
@@ -229,7 +230,7 @@ function App() {
                 
                 <h1 class="text-lg text-white mb-3 font-semibold text-center mt-5">Dijkstra Algorithm Visualizer</h1>
                   <p class="text-center text-white">
-                    Developed a visualization tool that finds the shortest path between nodes in a graph using Dijkstra's Algorithm. Input is given by a text file containing a weighted adjacency matrix. Built using Java.
+                    Built a visualization tool using Java AWT that finds the shortest path between nodes in a graph using Dijkstra's Algorithm. Input is given by a text file containing a weighted adjacency matrix.
                   </p>
               </a>     
           </div>
@@ -296,6 +297,25 @@ function App() {
                 </p>
             </a>
           </div>
+
+           <div class="hover:opacity-70 bg-neutral-900 rounded-md py-3 px-3 border-2 border-vicepink grid place-content-center cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ">
+            <a onClick={(e) => {
+              e.preventDefault();
+              window.open("https://github.com/dnava1/combinatorial-optimization");
+              }}>
+                <div class="grid place-content-center mt-5">
+                  <img src={combinatorial} class="rounded-full" height={425} width={425} />
+                  </div>
+                  <h1 class="text-lg text-white mb-3 font-semibold text-center mt-5">Combinatorial Optimization Visualizer</h1>
+                  <p class="text-center text-white">
+                  Visually represented a travelling salesman type problem using Java AWT. A local search algorithm is represented alongside an exhaustive search algorithm. The shortest path and
+                 path distance is shown. Input is given by a text file containing a list of coordinates.
+                  </p>
+            </a>
+          </div>
+
+
+
         </div >
       </div>
       <div class="pb-5"></div>
