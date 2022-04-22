@@ -97,7 +97,7 @@ function App() {
                   <button class="mt-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 button text-white bg-gradient-to-r from-vicepink via-pink-400 to-vicepink hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-vicepink shadow-lg font-mediumtext-sm px-3 py-2.5 mb-20 text-center "
                     onClick={(e) => {
                     e.preventDefault();
-                    window.open("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*");
+                    window.open("https://drive.google.com/file/d/1U4_sY6Ht3hoH8l7-CeyQZhfhaQ4q2349/view?usp=sharing");
                     }}>
                       Download Resume
                   </button>
@@ -329,7 +329,7 @@ function App() {
         <li>
           <a class="mr-4 hover:underline md:mr-6 text-white hover:cursor-pointer" onClick={(e) => {
             e.preventDefault();
-            window.open("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*");
+            window.open("https://drive.google.com/file/d/1U4_sY6Ht3hoH8l7-CeyQZhfhaQ4q2349/view?usp=sharing");
             }}>Resume</a>
         </li>
         <li>
