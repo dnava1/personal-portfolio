@@ -238,7 +238,7 @@ function App() {
           <div class="hover:opacity-70 bg-neutral-900 rounded-md py-3 px-3 border-2 border-vicepink grid place-content-center cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ">
             <a onClick={(e) => {
               e.preventDefault();
-              window.open("https://github.com/Mkamboykos/Anxiety-Stress-Self-Management");
+              window.open("https://github.com/dnava1/mask-detection");
               }}>
                 <div class="grid place-content-center mt-5">
                   <img src={facemask}class="rounded-full"height={425} width={425} />
